@@ -1,0 +1,75 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.iso
+*.rar
+*.tar
+*.zip
+*.pyc
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+*.DS_Store
+**.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea
+.gradle
+.metadata
+**.project
+**.classpath
+**.settings
+.mvn
+*.iml
+atlassian-ide-plugin.xml
+target
+api/jacoco.exec
+relay/jacoco.exec
+.factorypath
+.springBeans
+.*.yml.swp
+
+# Automated tests results #
+###########################
+**/robotframework/**/results/
+
+# Scripts
+output*.csv
+log.txt
+
+# Jmeter files
+jmeter.log
+jacoco.exec
+
+automated-tests/relay/cases/junitReport.xml
+
+node_modules/
+
+package.json
+
+package-lock.json
+
+docs/reference/api-docs.json
+
+/automated-tests/gatling/src/test/resources/config-secrets.yml
+/automated-tests/gatling/src/test/resources/value-stream-config-secrets.yml
