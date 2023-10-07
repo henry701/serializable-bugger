@@ -107,7 +107,7 @@ class PostgresqlSerializableInsertWhereNotExistsIntegratedTest {
   @Container
   static final PostgreSQLContainer<?> postgreSQLContainer =
       new PostgreSQLContainer<>(
-          DockerImageName.parse("timescale/timescaledb-ha:pg11-latest")
+          DockerImageName.parse("timescale/timescaledb-ha:pg15-all")
               .asCompatibleSubstituteFor("postgres"))
           .withDatabaseName("data_ingestion")
           .withUsername("admin")
