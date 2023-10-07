@@ -16,5 +16,5 @@ CREATE INDEX status_created_at_idx ON public.status USING btree (created_at DESC
 CREATE INDEX status_status_idx ON public.status USING btree (status) WHERE status IS NOT NULL;
 CREATE INDEX status_vendor_id_idx ON public.status USING btree (vendor_id);
 
-CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;
-SELECT create_hypertable('status','created_at', migrate_data => true, chunk_time_interval => INTERVAL '1 day');
+-- CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;
+-- SELECT create_hypertable('status','created_at', migrate_data => true, chunk_time_interval => INTERVAL '1 day');
